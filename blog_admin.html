@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/siran.png" sizes="50x50"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Insert</title>
+</head>
+<body>
+<div class="main-content">
+<main>
+  <section class="blog_content container">
+    <form id="blog_data">
+      <div class="blog_content__div">
+        <div><label for="blog-title">Blog Title</label><br>
+          <input type="text" id="blog-title"/>
+        </div>
+        <div><label for="blog-tags">Blog Tags</label><br>
+          <input type="text" id="blog-tags"/>
+        </div>
+        <div><label for="blog-content">Blog Content</label><br>
+          <textarea id="blog-content"></textarea>
+        </div>
+        <div><label for="blog-pictures">Select Pictures</label><br>
+          <input type="file" id="blog-pictures" multiple/>
+        </div>
+        <div>
+          <button id="submit">SUBMIT</button>
+        </div>
+        <div class="post_message">
+          <div class="post_message__body"></div>
+          <div><label id="post_message__close">X</label></div>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
+</div>
+<script type="module" src="js/portfolio_blog_submission.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.contact{
+    border: 1px solid var(--Light-black);
+    border-radius:2em;
+    padding:1em 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.contact__right_hand{
+    margin-top: 1.5em;
+}
+
+.contact_left_hand_heading{
+    color: var(--Black);
+    font-size:var(--size-xl);
+    text-align: center;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_form div{
+    margin:0.5em;
+}
+
+.contact_form_label{
+    color:var(--Black);
+}
+
+.contact_form_input{
+    width: 18em;
+    height: 4em;
+}
+
+.contact_form_textarea{
+    width: 18em;
+    height: 8em;
+    resize: none;
+}
+
+.contact_form_input, .contact_form_textarea{
+    border:none;
+    border-radius:5px;
+    padding: 0.5em;
+    background-color: var(--light-background);
+    color: var(--Black);
+}
+
+.contact_form_btn{
+    --size:15rem;
+    background-color:var(--Light-black);
+    color: var(--light-background);
+    width:var(--size);
+    height:calc(var(--size)/5);
+    border-radius: 0.5em;
+}
+
+.contact_form_btn:hover {
+    background-color: var(--Black);
+}
+
+/* media queries */
+/* xs */
+@media screen and (min-width: 475px) {
+    .contact_form_input{
+        width: 20em;
+    }
+
+    .contact_form_textarea{
+        width: 20em;
+    }
+}
+/* sm */
+@media screen and (min-width: 640px) {
+
+}
+/* md */
+@media screen and (min-width: 768px) {
+    .contact__contact_div{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .contact__left_hand{
+        margin-top: 2em;
+    }
+
+    .contact_left_hand_heading{
+        font-size:var(--size-4xl);
+    }
+
+    .contact_form_textarea{
+        width: 15em;
+        height: 6em;
+    }
+
+    .contact_form_input{
+        width: 15em;
+        height: 3em;
+    }
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+
+}

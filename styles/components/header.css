@@ -1,0 +1,128 @@
+.header{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu{
+    display:flex;
+    list-style: none;
+    gap:1em;
+    align-items: center;
+}
+
+.header__link{
+    font-size:var(--size-base);
+    text-decoration: none;
+    color: var(--Black);
+    transition: all 0.3s;
+}
+
+.name{
+    font-weight: 600;
+    font-size:var(--size-lg);
+    background: linear-gradient(45deg,var(--purple),var(--Black));
+    background-clip: text;
+    -webkit-background-clip: text; /* For browser compatibility */
+    color: transparent;
+}
+
+.header__resume{
+    font-size:var(--size-base);
+    text-decoration:none;
+    color: var(--Black);
+}
+
+.mode-switch{
+    cursor: pointer;
+    font-size: var(--size-base);
+    color: var(--Black);
+    transition: all 0.5s;
+}
+
+/* xs */
+@media screen and (min-width: 475px) {
+
+}
+/* sm */
+@media screen and (min-width: 640px) {
+
+}
+/* md */
+@media screen and (min-width: 768px) {
+    .header__menu{
+        gap:2em;
+        align-items: center;
+    }
+
+    .header__link{
+        font-size:var(--size-lg);
+        color: var(--Light-black);
+    }
+
+    .header__link::after{
+        content:"";
+        display: block;
+        margin-top:0.05em;
+        height: 1px;
+        width: 100%;
+        background-color: var(--Light-black);
+        transform: scale(0);
+        transition:transform 0.3s;
+    }
+
+    .header__link:hover::after{
+        transform: scale(1);
+    }
+
+    .header__link:hover, .header__link:active{
+        color: var(--Black);
+    }
+
+    .header__mode:hover {
+        color: var(--Black);
+    }
+
+    .header__resume{
+        font-size:var(--size-lg);
+    }
+
+    .header__resume:hover{
+        color: var(--Black);
+    }
+
+    .mode-switch{
+        cursor: pointer;
+        color: var(--Light-black);
+        transition: all 0.5s;
+    }
+
+    .mode-switch:hover{
+        color: var(--Black);
+    }
+
+    .name{
+        font-weight: 600;
+        font-size:var(--size-2xl);
+        background: linear-gradient(45deg,var(--purple),var(--Black));
+        background-clip: text;
+        -webkit-background-clip: text; /* For browser compatibility */
+        color: transparent;
+    }
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+
+}

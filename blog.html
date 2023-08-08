@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <base href="/">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="/siran.png" sizes="50x50"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <title>Siran's Blog</title>
+</head>
+<body class="blog_html_body">
+<div id="main-content" class="main-content">
+  <header class="header container">
+    <nav class="header__nav">
+      <div>
+        <ul class="header__menu">
+          <li><a class="header__link name active" href="/index.html">Siran</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="header__menu">
+          <li>
+            <button class="header__mode mode-switch" data-attribute="light">
+              <i class="mode-icon far fa-moon fa-lg"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="blog_main container section" id="blog_main">
+      <div class="blob__parent">
+        <div class="blob-bg blob-2 blob"></div>
+        <div class="blob-bg blob-3 blob"></div>
+        <div class="blob-bg blob-4 blob"></div>
+      </div>
+      <div class="blog_main__parent_div" id="blog_main__parent_div">
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer container">
+    <div class="footer__social_div">
+      <div class="footer__social linkedin"><a href="https://www.linkedin.com/in/siranjeevi-muthusamy-476906214/" target="_blank">LinkedIn</a></div>
+      <div class="footer__social instagram"><a href="https://www.instagram.com/_._siran_._/" target="_blank">Instagram</a></div>
+    </div>
+  </footer>
+</div>
+<script type="module" src="js/portfolio.js"></script>
+<script type="module" src="js/portfolio_blog_main.js"></script>
+<script type="module">
+  import { fetch_blogs } from './js/portfolio_blog_main.js';
+  document.addEventListener("DOMContentLoaded", function() {
+    let source = 'blogpage';
+    fetch_blogs(source);
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</body>
+</html>

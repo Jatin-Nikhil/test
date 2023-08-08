@@ -1,0 +1,50 @@
+.footer{
+    margin:1rem;
+    padding:1rem;
+}
+
+.footer__social_div{
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+}
+
+.footer__social a{
+    text-decoration:none;
+    color:var(--Light-black);
+    font-size: var(--size-base);
+    font-weight:600;
+}
+
+.footer__social a:hover{
+    color:var(--Black);
+}
+
+/* media queries */
+/* xs */
+@media screen and (min-width: 475px) {
+
+}
+/* sm */
+@media screen and (min-width: 640px) {
+
+}
+/* md */
+@media screen and (min-width: 768px) {
+    .footer{
+        margin:2rem;
+    }
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+
+}
+

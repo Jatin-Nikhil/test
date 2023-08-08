@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <base href="/">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="/siran.png" sizes="50x50"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <title>Siran's Portfolio</title>
+</head>
+<body>
+<div id="main-content" class="main-content">
+  <header class="header container">
+    <nav class="header__nav">
+      <div>
+        <ul class="header__menu">
+          <li><a class="header__link name active" href="/">Siran</a></li>
+          <li><a class="header__link" href="#work">Work</a></li>
+          <li><a class="header__link" href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="header__menu">
+          <li>
+            <button class="header__mode mode-switch" data-attribute="light">
+              <i class="mode-icon far fa-moon fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="header__resume header__link btn resumeButton_desktop">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="blob__parent">
+        <div class="blob-bg blob-1 blob"></div>
+        <div class="blob-bg blob-2 blob"></div>
+        <div class="blob-bg blob-3 blob"></div>
+        <div class="blob-bg blob-4 blob"></div>
+      </div>
+      <div class="hero__title_div">
+        <h1 class="hero__title">hey..<br>i'm Siran</h1>
+      </div>
+      <div class="hero__description_div">
+        <p class="hero__my_description"><q>A commerce graduate passionate about web design and development,
+          I create web solutions with precision and simplicity, blending aesthetics and functionality seamlessly.
+          Let's build an exceptional web experience together.</q></p>
+      </div>
+    </section>
+
+    <section class="about container section" id="about">
+      <div class="about__me">
+        <h1>My Career</h1>
+        <p>
+          Before starting my tech role, I worked as a Customer Service Associate at Amazon for almost 2.5 years.
+          From there, I gradually progressed to the position of Automation Specialist, also known as a Junior Full Stack Web Developer.
+          It has been 2 years in the tech role, and the excitement continues to thrive.
+        </p>
+      </div>
+      <div class="about__me_tabs">
+        <div class="tab__titles">
+          <button class="tab_links active" data-attribute="skills">Skills</button>
+          <button class="tab_links" data-attribute="education">Education</button>
+        </div>
+        <div class="tab_content_parent">
+          <div class="tab_content active" id="skills"><label>HTML/CSS</label>
+            <label>SASS</label>
+            <label>BOOTSTRAP</label>
+            <label>JQUERY</label>
+            <label>JAVASCRIPT</label>
+            <label>MYSQL</label>
+            <label>JAVA</label>
+          </div>
+          <div class="tab_content" id="education">
+            <p>During my undergraduate studies, I pursued a Bachelor's degree in Commerce with Computer Applications at Bharathiar University.
+              Currently, I am enrolled and looking forward to commencing my Master's program in Cloud Computing at National College in Ireland.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work container section slide_up"  id="work">
+      <h1>My Work</h1>
+      <div class="work__div">
+        <div class="work__div_child" data-attribute="portfolio">
+          <div class="work__body">
+            <h4>Portfolio</h4>
+            <div class="work__bg">
+              <img src="public/work/work_1.png" alt="work_1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog container section slide_up" id="blog">
+      <h1>Latest</h1>
+        <div class="blog__content" id="blog__parent">
+        </div>
+        <div><h3><a href="blog.html" target="_blank">Visit Blog &rarr;</a></h3></div>
+    </section>
+
+    <section class="contact container section slide_up" id="contact">
+      <div class="contact__contact_div">
+          <div class="contact__left_hand">
+            <h1 class="contact_left_hand_heading">Want to get in touch?</h1>
+          </div>
+          <div class="contact__right_hand">
+            <div class="contact_form">
+              <div><label class="contact_form_label" for="name">Name</label><br>
+                <input type="text" class="contact_form_input" id="name" placeholder="Enter your name"></div>
+              <div><label class="contact_form_label" for="email">Email Address</label><br>
+                <input type="text" class="contact_form_input" id="email" placeholder="Enter your email address"></div>
+              <div><label class="contact_form_label" for="message">Message</label><br>
+                <textarea class="contact_form_textarea" id="message" placeholder="Enter your message"></textarea>
+              </div>
+              <div>
+                <button class="contact_form_btn" id="contact_form_btn">Submit</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container">
+    <div class="footer__social_div">
+      <div class="footer__social linkedin"><a href="https://www.linkedin.com/in/siranjeevi-muthusamy-476906214/" target="_blank">LinkedIn</a></div>
+      <div class="footer__social instagram"><a href="https://www.instagram.com/_._siran_._/" target="_blank">Instagram</a></div>
+    </div>
+  </footer>
+</div>
+<script type="module" src="js/portfolio.js"></script>
+<script type="module" src="js/portfolio_blog_main.js"></script>
+<script type="module">
+  import { fetch_blogs } from './js/portfolio_blog_main.js';
+  document.addEventListener("DOMContentLoaded", function() {
+    let source = 'mainpage';
+    fetch_blogs(source);
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/*==Color palette==*/
+:root {
+    /* backgrounds */
+    --light-background: #fafafa;
+    --Off-White: #eeeff1;
+
+    /* accents */
+    --Black: #1A1B1F;
+    --Light-black: #62646d;
+
+    /* Mandate-colors */
+    --white-important: #edf2f4;
+    --green: #37EBA9;
+    --blue: #5B37EB;
+    --purple: #CF43FD;
+    --dark-purple: #4E4187;
+
+    /*sizes*/
+    --size-xxs:0.5rem;
+    --size-xs:0.75rem;
+    --size-sm:0.875rem;
+    --size-base:1rem;
+    --size-lg:1.125rem;
+    --size-xl:1.25rem;
+    --size-2xl:1.5rem;
+    --size-3xl:1.875rem;
+    --size-4xl:2.25rem;
+    --size-5xl:3rem;
+    --size-6xl:3.75rem;
+    --size-7xl:4.5rem;
+    --size-8xl:6rem;
+    --size-9xl:8rem;
+    --size-10xl:10rem;
+}
+
+@viewport {
+    zoom: 1.0;
+    max-zoom: 1.0;
+    min-zoom: 1.0;
+    user-zoom: fixed;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+    transition: all 0.25s ease-out;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--Off-White);
+    font-family: graphik-regular,"Open sans", "Arial", sans-serif;
+}
+
+img, video, picture, canvas, svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Importing fonts */
+@font-face {
+    font-family: poppins-regular;
+    src: url(././fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Neuehaa;
+    src: url(././fonts/NeueHaasUnica-Regular.ttf);
+}
+
+@font-face {
+    font-family: graphik-medium;
+    src: url(././fonts/GraphikMedium.otf);
+}
+
+@font-face {
+    font-family: graphik-regular;
+    src: url(././fonts/GraphikRegular.otf);
+}
+
+@font-face {
+    font-family: graphik-bold;
+    src: url(././fonts/GraphikBold.otf);
+}
+
+
+/*# sourceMappingURL=portfolio_blog_input_style.css.map */

@@ -1,0 +1,215 @@
+:root {
+    /* backgrounds */
+    --light-background: #FFFFFF;
+    --Off-White: #F5F5F7;
+
+    /* accents */
+    --Black: #1A1B1F;
+    --Light-black: #62646d;
+    --success:#6a994e;
+    --error: #c1121f;
+
+    /*sizes*/
+    --size-xxs:0.5rem;
+    --size-xs:0.75rem;
+    --size-sm:0.875rem;
+    --size-base:1rem;
+    --size-lg:1.125rem;
+    --size-xl:1.25rem;
+    --size-2xl:1.5rem;
+    --size-3xl:1.875rem;
+    --size-4xl:2.25rem;
+    --size-5xl:3rem;
+    --size-6xl:3.75rem;
+    --size-7xl:4.5rem;
+    --size-8xl:6rem;
+    --size-9xl:8rem;
+    --size-10xl:10rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+    transition: all 0.25s ease-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: graphik-regular, "Open sans", "Arial", sans-serif;
+    background-color: var(--Off-White);
+}
+
+img, video, picture, canvas, svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    border: 1px solid var(--Light-black);
+    background: /*var(--Light-black);*/#023047;
+    cursor: pointer;
+    color: var(--Off-White);
+    border-radius:5px;
+    width:15em;
+}
+
+.main-content{
+    width: 98%;
+    height: 100vh;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.section{
+    margin-top:5rem;
+}
+
+.blog_content__div{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 1rem;
+    border-radius:2em;
+    padding:1em 0;
+    text-align: left;
+    background-image: url(../public/portfolio-blog-bg-2.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.blog_content__div label{
+    padding-top: 1em;
+    font-size:var(--size-xs);
+    letter-spacing:0.05em;
+    line-height: 1em;
+    color: var(--light-background);
+    font-weight:600;
+}
+
+input[type="text"],textarea{
+    border-radius:5px;
+    width:20em;
+    border:1px solid var(--Light-black);
+}
+
+textarea{
+    height:15em;
+    resize: none;
+}
+
+.post_message{
+    position:absolute;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    right: 1em;
+    top: 1em;
+    width:10em;
+    border-radius:4px;
+    background-color:white;
+    z-index: 1;
+    font-weight:600;
+    visibility: hidden;
+    padding:1rem;
+}
+
+.post_message__body{
+    font-size:var(--size-sm);
+}
+
+#post_message__close{
+    color: var(--Light-black);
+    cursor: pointer;
+}
+/* media queries */
+/* xs */
+@media screen and (min-width: 475px) {
+    .container{
+        max-width:475px;
+    }
+}
+/* sm */
+@media screen and (min-width: 640px) {
+    .container{
+        max-width:640px;
+    }
+}
+/* md */
+@media screen and (min-width: 768px) {
+    .container{
+        max-width:768px;
+    }
+
+    .blog_content__div label{
+        font-size:var(--size-lg);
+        line-height: 2em;
+    }
+
+    input[type="text"],textarea{
+        border-radius:5px;
+        width:20rem;
+        border:1px solid var(--Light-black);
+    }
+
+    textarea{
+        height:15rem;
+    }
+
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+    .container{
+        max-width:1024px;
+    }
+    .section{
+        margin-top:10rem;
+    }
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+    .container{
+        max-width:1280px;
+    }
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+    .container{
+        max-width:1536px;
+    }
+}
+
+/* Importing fonts */
+@font-face {
+    font-family: graphik-regular;
+    src: url(./fonts/GraphikRegular.otf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+/*# sourceMappingURL=portfolio_blog_input_style.css.map */
