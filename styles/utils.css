@@ -1,12 +1,9 @@
-.main-content{
-    width: 98%;
-    height: 100vh;
-    margin: auto;
-}
-
 .container{
+    max-width:425px;
+    min-width:200px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    margin: auto;
 }
 
 .section{
@@ -19,8 +16,8 @@
 }
 
 *::-webkit-scrollbar {
-    width: 0.4em;
-    height: 10px;
+    width: 0.2em;
+    height: 5px;
 }
 
 *::-webkit-scrollbar-track {
@@ -28,27 +25,36 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: inherit;
+    background-color: var(--Light-black);
     border-radius: 50px;
 }
 /* media queries */
 /* xs */
 @media screen and (min-width: 475px) {
-
-}
-/* sm */
-@media screen and (min-width: 640px) {
-
-}
-/* md */
-@media screen and (min-width: 768px) {
-    .main-content{
-        max-width: 80%;
-        position: relative;
+    .container{
+        max-width:475px;
         margin: auto;
     }
 
+    .section{
+        margin-top:5rem;
+    }
+}
+/* sm */
+@media screen and (min-width: 640px) {
     .container{
+        max-width:640px;
+        margin: auto;
+    }
+
+    .section{
+        margin-top:5rem;
+    }
+}
+/* md */
+@media screen and (min-width: 768px) {
+    .container{
+        max-width:700px;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -59,12 +65,8 @@
 }
 /* lg */
 @media screen and (min-width: 1024px) {
-    .main-content{
-        max-width: 70%;
-    }
-
     .container{
-        max-width: 1024px;
+        max-width:700px;
         margin: auto;
     }
 
@@ -74,12 +76,8 @@
 }
 /* xl */
 @media screen and (min-width: 1280px) {
-    .main-content{
-        max-width: 50%;
-    }
-
     .container{
-        max-width: 1024px;
+        max-width:700px;
         margin: auto;
     }
 
@@ -90,12 +88,8 @@
 }
 /* 2xl */
 @media screen and (min-width: 1536px) {
-    .main-content{
-        max-width: 50%;
-    }
-
     .container{
-        max-width: 1024px;
+        max-width:700px;
         margin: auto;
     }
 

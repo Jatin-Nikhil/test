@@ -1,5 +1,6 @@
 .work__div{
     padding:0.7em;
+    font-family: Neuehaa, "Open sans", "Arial", sans-serif;
 }
 
 .work__div_section{
@@ -8,6 +9,10 @@
     gap:0.7em;
     padding: 0.7em;
     background-color: var(--Off-White);
+}
+
+.work__main{
+    font-weight: 100;
 }
 
 .top_radius{
@@ -24,7 +29,7 @@
 }
 
 .work__div_pic_group_parent{
-    overflow:hidden;
+    overflow:scroll;
 }
 
 .work__div_pic_groups{
@@ -48,7 +53,31 @@
     letter-spacing: 0.05em;
 }
 
+.work__div_section blockquote{
+    border-left: 5px solid var(--purple);
+    padding: 0.7em;
+    color: var(--Light-black);
+    font-style: italic;
+    background-color: var(--light-background);
+    border-radius: 0.45rem 0 0 0.45rem;
+    line-height: 1.75;
+}
 
+.work__div_section a {
+    text-decoration: none;
+    color: var(--Black);
+    border-bottom: 1px solid var(--Light-black);
+}
+
+.work__div_section code{
+    max-width: inherit;
+    overflow: scroll;
+    line-break: strict;
+    background-color: #32324D;
+    border-radius: 0.2em;
+    color: #5C8396;
+    padding:0.4em 0.9em 0.4em 0.9em;
+}
 /* media queries */
 /* xs */
 @media screen and (min-width: 475px) {

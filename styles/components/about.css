@@ -7,16 +7,19 @@
     background-color: var(--light-background);
     border-radius:2em;
     padding:1em 0;
+    font-family: Neuehaa,"Open sans", "Arial", sans-serif;
 }
 
 .about__me p{
     margin-top: 1.5em;
     font-size:var(--size-base);
     line-height: 1.75;
+    color: var(--Black);
 }
 
 .about__me h1{
     font-size:var(--size-xl);
+    color: var(--Black);
 }
 
 .about__me_tabs{

@@ -6,21 +6,20 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="icon" href="/siran.png" sizes="50x50"/>
+  <link rel="icon" href="/favicon.ico" sizes="80x80"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <title>Siran's Portfolio</title>
 </head>
 <body>
-<div id="main-content" class="main-content">
   <header class="header container">
     <nav class="header__nav">
       <div>
         <ul class="header__menu">
           <li><a class="header__link name active" href="/">Siran</a></li>
-          <li><a class="header__link" href="#work">Work</a></li>
-          <li><a class="header__link" href="#blog">Blog</a></li>
+          <li><a class="header__link revert_tab_btn" href="#work">Work</a></li>
+          <li><a class="header__link revert_tab_btn" href="/blog.html">Blog</a></li>
         </ul>
       </div>
       <div>
@@ -31,7 +30,7 @@
             </button>
           </li>
           <li>
-            <a href="#" class="header__resume header__link btn resumeButton_desktop">Resume</a>
+            <a href="#" class="header__resume header__link btn resumeButton_desktop">resume</a>
           </li>
         </ul>
       </div>
@@ -46,22 +45,21 @@
         <div class="blob-bg blob-4 blob"></div>
       </div>
       <div class="hero__title_div">
-        <h1 class="hero__title">hey..<br>i'm Siran</h1>
+        <h1 class="hero__title">hey..<br><span class="my_name">I'm Siran</span></h1>
       </div>
       <div class="hero__description_div">
         <p class="hero__my_description"><q>A commerce graduate passionate about web design and development,
           I create web solutions with precision and simplicity, blending aesthetics and functionality seamlessly.
-          Let's build an exceptional web experience together.</q></p>
+          Scroll down to know more about me.</q></p>
       </div>
     </section>
-
     <section class="about container section" id="about">
       <div class="about__me">
         <h1>My Career</h1>
         <p>
-          Before starting my tech role, I worked as a Customer Service Associate at Amazon for almost 2.5 years.
-          From there, I gradually progressed to the position of Automation Specialist, also known as a Junior Full Stack Web Developer.
-          It has been 2 years in the tech role, and the excitement continues to thrive.
+          Before embarking on my current tech journey, I spent nearly 2.5 years as a Customer Service Associate at Amazon.
+          Gradually, I transitioned to the role of an Automation Specialist, also known as a Junior Full Stack Web Developer.
+          With 2 years of experience in the tech field, my enthusiasm for this path continues to grow.
         </p>
       </div>
       <div class="about__me_tabs">
@@ -85,7 +83,6 @@
         </div>
       </div>
     </section>
-
     <section class="work container section slide_up"  id="work">
       <h1>My Work</h1>
       <div class="work__div">
@@ -99,14 +96,6 @@
         </div>
       </div>
     </section>
-
-    <section class="blog container section slide_up" id="blog">
-      <h1>Latest</h1>
-        <div class="blog__content" id="blog__parent">
-        </div>
-        <div><h3><a href="blog.html" target="_blank">Visit Blog &rarr;</a></h3></div>
-    </section>
-
     <section class="contact container section slide_up" id="contact">
       <div class="contact__contact_div">
           <div class="contact__left_hand">
@@ -117,7 +106,7 @@
               <div><label class="contact_form_label" for="name">Name</label><br>
                 <input type="text" class="contact_form_input" id="name" placeholder="Enter your name"></div>
               <div><label class="contact_form_label" for="email">Email Address</label><br>
-                <input type="text" class="contact_form_input" id="email" placeholder="Enter your email address"></div>
+                <input type="email" class="contact_form_input" id="email" placeholder="Enter your email address"></div>
               <div><label class="contact_form_label" for="message">Message</label><br>
                 <textarea class="contact_form_textarea" id="message" placeholder="Enter your message"></textarea>
               </div>
@@ -129,22 +118,13 @@
       </div>
     </section>
   </main>
-  <footer class="footer container">
+  <footer class="footer container portfolio_content">
     <div class="footer__social_div">
       <div class="footer__social linkedin"><a href="https://www.linkedin.com/in/siranjeevi-muthusamy-476906214/" target="_blank">LinkedIn</a></div>
       <div class="footer__social instagram"><a href="https://www.instagram.com/_._siran_._/" target="_blank">Instagram</a></div>
     </div>
   </footer>
-</div>
 <script type="module" src="js/portfolio.js"></script>
-<script type="module" src="js/portfolio_blog_main.js"></script>
-<script type="module">
-  import { fetch_blogs } from './js/portfolio_blog_main.js';
-  document.addEventListener("DOMContentLoaded", function() {
-    let source = 'mainpage';
-    fetch_blogs(source);
-  });
-</script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <base href="/">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="icon" href="/siran.png" sizes="50x50"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-  <title>Siran's Blog</title>
+    <meta charset="UTF-8" />
+    <base href="/">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="/favicon.ico" sizes="50x50"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <title>Siran's Blog</title>
 </head>
-<body class="blog_html_body">
-<div id="main-content" class="main-content">
-  <header class="header container">
+<body>
+<header class="header container">
     <nav class="header__nav">
-      <div>
-        <ul class="header__menu">
-          <li><a class="header__link name active" href="/index.html">Siran</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul class="header__menu">
-          <li>
-            <button class="header__mode mode-switch" data-attribute="light">
-              <i class="mode-icon far fa-moon fa-lg"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
+        <div>
+            <ul class="header__menu">
+                <li><a class="header__link name" href="/">Siran</a></li>
+                <li><a class="header__link revert_tab_btn" href="#work">Work</a></li>
+                <li><a class="header__link revert_tab_btn active" href="/blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="header__menu">
+                <li>
+                    <button class="header__mode mode-switch" data-attribute="light">
+                        <i class="mode-icon far fa-moon fa-lg"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="#" class="header__resume header__link btn resumeButton_desktop">resume</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </header>
-  <main>
-    <section class="blog_main container section" id="blog_main">
-      <div class="blob__parent">
-        <div class="blob-bg blob-2 blob"></div>
-        <div class="blob-bg blob-3 blob"></div>
-        <div class="blob-bg blob-4 blob"></div>
-      </div>
-      <div class="blog_main__parent_div" id="blog_main__parent_div">
-
-      </div>
+</header>
+<main>
+    <section class="blog container" id="_blog">
+        <h1>My Writing</h1>
+        <div class="blog__content" id="blog__parent">
+        </div>
     </section>
-  </main>
-  <footer class="footer container">
-    <div class="footer__social_div">
-      <div class="footer__social linkedin"><a href="https://www.linkedin.com/in/siranjeevi-muthusamy-476906214/" target="_blank">LinkedIn</a></div>
-      <div class="footer__social instagram"><a href="https://www.instagram.com/_._siran_._/" target="_blank">Instagram</a></div>
-    </div>
-  </footer>
-</div>
+    <section class="tab_blog container" id="tab_blog" style="display: none;">
+        <div class="tab_blog_content">
+            <div><button class="tab_switch">&larr; Back</button></div>
+            <div class="tab_blog_content_main" id="tab_blog_content_main">
+
+            </div>
+        </div>
+    </section>
+</main>
 <script type="module" src="js/portfolio.js"></script>
 <script type="module" src="js/portfolio_blog_main.js"></script>
 <script type="module">
-  import { fetch_blogs } from './js/portfolio_blog_main.js';
-  document.addEventListener("DOMContentLoaded", function() {
-    let source = 'blogpage';
-    fetch_blogs(source);
-  });
+    import { fetch_blogs } from './js/portfolio_blog_main.js';
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch_blogs();
+    });
 </script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/markdown-it@12.0.4/dist/markdown-it.min.js"></script>
 </body>
 </html>

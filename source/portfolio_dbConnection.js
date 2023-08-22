@@ -1,9 +1,9 @@
 import mysql from 'mysql'
 
 const connection = mysql.createConnection({
-    host: 'portfolio.c0s2mhohxjkg.us-east-2.rds.amazonaws.com',
+    host: 'portfolio-main.c8cxaisywgmx.ap-south-1.rds.amazonaws.com',
     user: 'admin',
-    password: 'Naruto2023',
+    password: '!Naruto2023',
     database: '',
     port: 3306
 });

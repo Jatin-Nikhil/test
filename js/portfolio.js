@@ -7,7 +7,6 @@ import '../styles/components/about.css'
 import '../styles/components/work.css'
 import '../styles/components/work_sub.css'
 import '../styles/components/blog.css'
-import '../styles/components/blog_main.css'
 import '../styles/components/contact.css'
 import '../styles/components/footer.css'
 import '../styles/utils.css'
@@ -16,36 +15,50 @@ import './utils.js'
 $ (document).ready(function () {
 
 //==================== CONTACT JS ====================
-    $("#contact_form_btn").click(function(){
-       let name = $("#name").val();
+    $("#contact_form_btn").click(function() {
+        let name = $("#name").val();
         let email = $("#email").val();
         let message = $("#message").val();
-        console.log("the name is "+name);
-        const data = {name, email, message};
-        console.log("the name in object is "+data[0]);
+
+        if (name === "" || email === "" || message === "") {
+            // Show inline validation error messages
+            if (name === "") $("#name").css('border','1px solid red');
+            if (email === "") $("#email").css('border','1px solid red');
+            if (message === "") $("#message").css('border','1px solid red');
+            return;
+        }
+        $("#name").css('border','none');
+        $("#email").css('border','none');
+        $("#message").css('border','none');
+
+        $(this).html('<i class="fas fa-spinner fa-spin"></i> Loading...');
+        const data = { name, email, message };
+
         $.ajax({
             url: '/api/master_route',
             method: 'post',
-            data:{
-                action:'submit_contact',
+            data: {
+                action: 'submit_contact',
                 my_data: data
             },
             success: function(response) {
-                console.log(response);
+                $("#contact_form_btn").html('<i class="fas fa-check"></i> Submitted');
                 clear_contact();
+                setTimeout(function() {
+                    $("#contact_form_btn").html('Submit');
+                }, 2000);
             },
             error: function(error) {
                 console.error('Error submitting the details:', error);
+                $("#contact_form_btn").html('Submit');
             },
-        })
+        });
     });
 
     //This clears the contact form after post submission
     function clear_contact() {
         $(".contact_form_input, .contact_form_textarea").val('');
     }
-
-
 
     //==================== WORK JS ====================
     $(".work__div_child").click(function(){

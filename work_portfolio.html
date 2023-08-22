@@ -12,7 +12,7 @@
 <body>
 <section class="work container">
     <div class="work__div">
-        <div class="work__div_section top_radius">
+        <div class="work__div_section work__main top_radius">
             <h4>Welcome to my portfolio!</h4>
             <p>
                 As a passionate and aspiring full-stack developer, I'm thrilled to unveil my very first project — this dynamic and interactive single column portfolio website.
@@ -30,63 +30,66 @@
                 <div class="image"><img src="./public/work/utils/expressjs.png" alt="expressjs.png"><label>Express.js</label></div>
                 <div class="image"><img src="./public/work/utils/aws.png" alt="aws.png"><label>AWS</label></div>
                 <div class="image"><img src="./public/work/utils/mysql.png" alt="mysql.png"><label>MySQL</label></div>
+                <div class="image"><img src="./public/work/utils/strapi.png" alt="mysql.png"><label>Strapi</label></div>
             </div>
         </div>
         <div class="work__div_pic">
             <img src="./public/work/work_1.png" alt="work_1">
         </div>
-        <div class="work__div_section bottom_radius">
+        <div class="work__div_section bottom_radius work__main">
             <br>
             <h2>Technical Underpinnings:</h2>
             <p>
-                This portfolio is a culmination of various cutting-edge technologies that work in harmony to bring it to life.
+                This portfolio is a culmination of various technologies that work in harmony to bring it to life.
                 The front-end is a medley of <b>HTML, CSS, and JavaScript</b> meticulously crafted to create an eye-catching user interface and fluid user experience.
                 I've leveraged the power of JavaScript and added a touch of <b><a href="https://jquery.com/">jQuery</a></b> for that extra interactivity and smooth animations.
             </p><br>
-            <h4>Node.js & Express.js:</h4>
+            <h4>1. Node.js & Express.js: Vite Dev Environment</h4>
             <p>
-                On the server-side, I've employed <b><u><a href="https://nodejs.org/en">Node.js</a></u></b> and
-                its powerful framework, <b><u><a href="https://expressjs.com/">Express.js</a></u></b> to handle requests and
+                On the server-side, I've employed <b><a href="https://nodejs.org/en">Node.js</a></b> and
+                its powerful framework, <b><a href="https://expressjs.com/">Express.js</a></b> to handle requests and
                 responses efficiently, providing a robust and scalable foundation for this portfolio.
                 Node.js enables high responsiveness and the ability to handle concurrent users with ease,
                 ensuring a seamless experience for visitors.
-
             </p>
-            <p>In addition to the server-side setup, I have utilized <b><u><a href="https://vitejs.dev/">Vite dev environment</a></u></b> to optimize the front-end development process.
+            <p>In addition to the server-side setup, I have utilized <b><a href="https://vitejs.dev/">Vite dev environment</a></b> to optimize the front-end development process.
                 Vite is a lightning-fast build tool and development server specifically designed for modern JavaScript projects.
-                With Vite's innovative features, such as native ES modules, blazing-fast hot module replacement (HMR), and
-                on-demand compilation, developing and testing this portfolio becomes incredibly efficient.
                 Thanks to Vite's ability to leverage native ES modules in modern browsers during development,
                 the build process is significantly accelerated.
-                The incremental updates and HMR provided by Vite ensure that changes to the code are reflected instantly,
-                eliminating the need for time-consuming refreshes and manual rebuilds.
-                This rapid development environment allows for a seamless and enjoyable development experience.
-
             </p>
             <p>The lightweight and lightning-fast nature of this technology stack ensures a high-performing, responsive, and user-friendly web experience.
             </p><br>
-            <h4>MySQL Database from Amazon Web Services - RDS:</h4>
+            <h4>2. Dynamic Blog Section:</h4>
+            <h5><u>Enhancements and Limitations in Blog Post URL Structure:*</u></h5>
+            <blockquote>
+                At present, the dynamic blogging section does not feature dedicated URLs for individual blog posts.
+                This is due to the absence of a routing library or the current implementation, which is functioning seamlessly.
+                While dedicated routing for the blog section is not in place now, I am considering the possibility of implementing it in the future to further enhance the user experience.
+            </blockquote><br>
             <p>
-                To ensure data integrity and reliability, I've entrusted the data handling to a robust <b><u><a href="https://aws.amazon.com/rds/">MySQL database hosted on Amazon Web Services - RDS</a></u></b>.
+                The blog section of this portfolio is empowered by <a href="https://strapi.io/">STRAPI</a>, an expressive and feature-rich open-source Content Management System (CMS).
+                This dynamic platform allows me to seamlessly create and share captivating content, enhancing your reading experience.
+                I'm excited to share compelling content and provide insights into my journey as a developer.
+            </p><br>
+            <h4>3. MySQL Database from Amazon Web Services - RDS:</h4>
+            <p>
+                To ensure data integrity and reliability, I've entrusted the data handling to a robust <b><a href="https://aws.amazon.com/rds/">MySQL</a> database hosted on Amazon Web Services - RDS</b>.
                 Leveraging the power of AWS ensures seamless data management, scalability, and high availability, allowing me to focus on delivering the best user experience.
             </p><br>
-            <h4>Dynamic Blog Section:</h4>
+            <h4>4. Responsive Design and Accessibility:</h4>
             <p>
-                The blog section of this portfolio is powered by an expressive and feature-rich Content Management System (CMS).
-                It enables me to create and share captivating content seamlessly, adding value to your reading experience.
-                I look forward to sharing technical tutorials, industry insights, and my journey as a developer in the blog section.
+                In the dynamic landscape of digital devices, ensuring accessibility for all users is paramount.
+                My portfolio boasts a mobile-first, responsive single-column layout that seamlessly adapts to diverse screen sizes, whether on a desktop, tablet, or smartphone.
+                Rooted in the core of my design philosophy, accessibility ensures that every user can effortlessly explore and enjoy my portfolio.
             </p><br>
-            <h4>Responsive Design and Accessibility:</h4>
-            <p>
-                In the ever-changing landscape of digital devices, it's essential to ensure that my portfolio is accessible to all users.
-                My portfolio is designed with mobile first responsive layouts, adapting gracefully to various screen sizes—be it a desktop, tablet, or smartphone.
-                Accessibility is at the heart of my design, making sure that all users can explore and enjoy my portfolio effortlessly.
-            </p><br>
-            <h4>Continuous Learning and Iterative Development:</h4>
+            <h4>5. Continuous Learning and Iterative Development:</h4>
             <p>
                 This portfolio is not just a one-time creation; it's an ongoing project fueled by my passion for continuous learning.
                 As I embark on new coding adventures and explore exciting technologies, I'll be adding more projects to showcase my versatility and proficiency.
                 It's a living testament to my dedication to honing my skills and staying ahead in the ever-evolving web development landscape.
+            </p><br>
+            <p>
+                The project can be cloned at: <br><code>https://github.com/siran-1/portfolio</code>
             </p><br>
         </div>
     </div>

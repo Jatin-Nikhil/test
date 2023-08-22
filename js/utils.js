@@ -35,7 +35,7 @@ const r = document.querySelector(':root');
 function myFunction_set(selector) {
     const ui_switch_btn = document.querySelector(selector);
     const light_ui = { '--light-background': '#fafafa', '--Off-White': '#eeeff1', '--Black': '#1A1B1F', '--Light-black': '#62646d', '--green':'#37EBA9', '--blue':'#5B37EB' };
-    const dark_ui = { '--light-background': '#2B4555', '--Off-White': '#1B242D', '--Black': '#eeeff1', '--Light-black': '#BBBBBB','--green':'#CF43FD', '--blue':'#26113C' };
+    const dark_ui = { '--light-background': '#212226', '--Off-White': '#000000', '--Black': '#e5e5e5', '--Light-black': '#BBBBBB','--green':'#CF43FD', '--blue':'#26113C' };
     const mode_value = ui_switch_btn.getAttribute('data-attribute');
     if (mode_value === 'light') {
         for (const [key, value] of Object.entries(dark_ui)) {

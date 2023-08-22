@@ -9,6 +9,12 @@
     position: relative;
 }
 
+.my_name{
+    background: linear-gradient(100deg, var(--Black)30%, var(--Light-black));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .hero__title_div{
     text-align: center;
     font-family: Neuehaa,"Open sans", "Arial", sans-serif;

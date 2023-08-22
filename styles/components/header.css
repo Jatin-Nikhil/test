@@ -27,7 +27,7 @@
     font-size:var(--size-lg);
     background: linear-gradient(45deg,var(--purple),var(--Black));
     background-clip: text;
-    -webkit-background-clip: text; /* For browser compatibility */
+    -webkit-background-clip: text;
     color: transparent;
 }
 
@@ -61,7 +61,6 @@
 
     .header__link{
         font-size:var(--size-lg);
-        color: var(--Light-black);
     }
 
     .header__link::after{
@@ -77,10 +76,6 @@
 
     .header__link:hover::after{
         transform: scale(1);
-    }
-
-    .header__link:hover, .header__link:active{
-        color: var(--Black);
     }
 
     .header__mode:hover {
