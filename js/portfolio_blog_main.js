@@ -63,7 +63,7 @@ function blog_creation_main(blogs){
 }
 
 function blog_post_show(blog){
-    tabswitch("function");
+    tab_switch("function");
     //main div
     const blog_post_Container = document.getElementById('tab_blog_content_main');
     blog_post_Container.innerHTML ="";
