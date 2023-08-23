@@ -30,6 +30,7 @@ res.sendFile(path.resolve(__dirname, '../index.html'));
 
 app.post('/master_route', upload.array('blogPictures'), (req, res) => {
     const {action } = req.body;
+    console.log("action is "+action);
     switch (action) {
         case 'get_blogs':
             get_Blogs(req, res);
